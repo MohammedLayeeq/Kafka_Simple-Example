@@ -15,9 +15,13 @@ kafka-topics.sh  --list --zookeeper localhost:2181
 # find the ip address of any broker from zookeeper-client using command  
 # open other terminal 
 $zookeeper-client
-ls /brokers/ids/0
-get /brokers/ids/0
-#you will host name 
+
+$ls /brokers/ids
+
+$get /brokers/ids/0
+
+
+#you will get hostname 
 # test is a topicname here. Replace test with some name specific to your username like abhinav9884_test
 # Replace localhost with the hostname of broker
 # Replace test with your topic name
